@@ -1,5 +1,6 @@
 # Coming Soon - Clean Coming Soon Template (Tailwind CSS, NextJs) by Themeptation
-
+#
+#
 ## How to use it?
 
 Execute to install dependecies
