@@ -38,7 +38,7 @@ const IndexPage = () => (
     <div className="absolute bottom-5">
       <ul className="flex space-x-3">
         <li>
-          <Link href="https://lxnft.store">
+          <Link href="https://www.instagram.com/lxnftstore/">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
@@ -56,7 +56,7 @@ const IndexPage = () => (
           </Link>
         </li>
         <li>
-          <Link href="https://lxnft.store">
+          <Link href="https://twitter.com/lxnftstore">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
@@ -70,7 +70,7 @@ const IndexPage = () => (
           </Link>
         </li>
         <li>
-          <Link href="https://lxnft.store">
+          <Link href="https://www.linkedin.com/company/lxnft/about/">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
@@ -88,7 +88,7 @@ const IndexPage = () => (
           </Link>
         </li>
         <li>
-          <Link href="https://lxnft.store">
+          <Link href="https://discord.gg/RGuv2nSJ">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
