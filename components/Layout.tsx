@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
+import Script from 'next/script'
 
 type Props = {
   children?: ReactNode;
@@ -24,6 +25,16 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       <meta property="og:url" content="https://lxnft.store" />
       <meta property="og:type" content="website" />
     </Head>
+    <Script src="https://www.googletagmanager.com/gtag/js?id=G-5X3F9K9BQJ" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5X3F9K9BQJ');
+        `}
+      </Script>
     {children}
   </div>
 );
