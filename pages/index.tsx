@@ -19,7 +19,7 @@ function IndexPage() {
   console.log('success');
   }
   return (
-  <Layout title="LXNFT STORE">
+  <Layout title="CoolNFT STORE">
     <img
       src="/images/xera.svg"
       alt="Themeptation "
@@ -35,7 +35,7 @@ function IndexPage() {
         <h3 className="font-light text-xl uppercase tracking-wider">
           Coming soon
         </h3>
-        <h1 className="text-7xl lg:text-9xl font-extrabold">LXNFT IS COMING!</h1>
+        <h1 className="text-7xl lg:text-9xl font-extrabold">CoolNFT STORE IS COMING!</h1>
         <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
           We`re almost ready. Check back for an update soon. Stay in
           touch!
@@ -45,7 +45,7 @@ function IndexPage() {
         <input
           id="userId"
           type="text"
-          placeholder="hi@lxnft.store"
+          placeholder="hi@coolnft.store"
           className="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 pr-36 lg:pr-44 rounded-xl"
         />
         <button type="submit" className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500">
@@ -56,7 +56,7 @@ function IndexPage() {
     <div className="absolute bottom-5">
       <ul className="flex space-x-3">
         <li>
-          <Link href="https://www.instagram.com/lxnftstore/">
+          <Link href="https://www.instagram.com/coolnftstore/">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
@@ -74,7 +74,7 @@ function IndexPage() {
           </Link>
         </li>
         <li>
-          <Link href="https://twitter.com/lxnftstore">
+          <Link href="https://twitter.com/coolnftstore">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
@@ -88,7 +88,7 @@ function IndexPage() {
           </Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/company/lxnft/about/">
+          <Link href="https://www.linkedin.com/company/coolnft/about/">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
                 className="w-6 h-6"
