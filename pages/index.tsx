@@ -8,7 +8,7 @@ function IndexPage() {
       const res = await fetch('https://mv1qqu0g59.execute-api.us-east-1.amazonaws.com/users', {
       body: JSON.stringify({
           userId: event.target.userId.value,
-      )},
+      }),
       headers: {
         'Content-Type': 'application/json'
       },
