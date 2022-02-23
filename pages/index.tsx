@@ -1,7 +1,24 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
-const IndexPage = () => (
+function IndexPage() {
+  const registerUser = async event => {
+    event.preventDefault();
+
+      const res = await fetch('https://mv1qqu0g59.execute-api.us-east-1.amazonaws.com/users', {
+        body: JSON.stringify({
+          userId: event.target.userId.value,
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      mode: 'no-cors'
+  })
+
+  console.log('success');
+  }
+  return (
   <Layout title="LXNFT STORE">
     <img
       src="/images/xera.svg"
@@ -24,13 +41,14 @@ const IndexPage = () => (
           touch!
         </p>
       </div>
-      <form className="relative z-10 mx-10 lg:max-w-xl lg:mx-auto">
+      <form onSubmit={registerUser} className="relative z-10 mx-10 lg:max-w-xl lg:mx-auto">
         <input
+          id="userId"
           type="text"
           placeholder="hi@lxnft.store"
           className="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 pr-36 lg:pr-44 rounded-xl"
         />
-        <button className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500">
+        <button type="submit" className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500">
           Notify me
         </button>
       </form>
@@ -109,5 +127,5 @@ const IndexPage = () => (
     </div>
   </Layout>
 );
-
+}
 export default IndexPage;
